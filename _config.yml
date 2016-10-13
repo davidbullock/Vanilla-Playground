@@ -1,15 +1,12 @@
-# Site settings
 title: Vanilla Playground
 email: info@serkai.co.uk
-description: "Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description."
-baseurl: ""
-url: "http://davidbullock.github.io/Vanilla-Playground"
-future: true
+description: "Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description"
 
-# Build settings
-markdown: kramdown
-permalink: /:year/:month/:title/
-paginate: 10
+github: [metadata]
+kramdown:
+  input: GFM
+  hard_wrap: false
+gems:
+   - jekyll-coffeescript
+   - jekyll-paginate
 
-# Gems
-gems: [jekyll-paginate]
