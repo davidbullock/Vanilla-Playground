@@ -1,3 +1,3 @@
 # Vanilla-Playground
 
-http://davidbullock.github.io/Vanilla-Playground
+https://davidbullock.github.io/Vanilla-Playground/
