@@ -1,0 +1,107 @@
+/*********************/
+/* LAYOUT / SECTIONS */
+/*********************/
+
+.container {
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 0 20px;
+    width: 100%;
+
+    @include mobile {
+        padding: 0 10px;
+    }
+}
+
+//
+// .masthead
+//
+
+.wrapper-masthead {
+    margin-bottom: 50px;
+    background-color: $white;
+}
+
+.masthead {
+    padding: 20px 0;
+    border-bottom: 1px solid $lightGray;
+
+    @include mobile {
+        text-align: center;
+    }
+}
+
+.site-info {
+    float: left;
+
+    @include mobile {
+        float: none;
+        display: block;
+        margin: 0 auto;
+    }
+}
+
+.site-name {
+    margin: 0;
+    color: $darkGray;
+    cursor: pointer;
+    font-weight: 300;
+    font-size: 28px;
+    letter-spacing: 1px;
+}
+
+.site-description {
+    margin: -5px 0 0 0;
+    color: $gray;
+    font-size: 16px;
+
+    @include mobile {
+        margin: 3px 0;
+    }
+}
+
+nav {
+    float: right;
+    margin-top: 23px;
+    font-size: 18px;
+
+    @include mobile {
+        float: none;
+        margin-top: 9px;
+        display: block;
+        font-size: 16px;
+    }
+
+    a {
+        margin-left: 20px;
+        // color: $brandPrimary;
+        text-align: right;
+        font-weight: 300;
+        letter-spacing: 1px;
+
+        &:hover, &:active {
+            // color: shade($brandPrimary, 10%);
+        }
+
+        @include mobile {
+            margin: 0 10px;
+        }
+    }
+}
+
+.wrapper-main {
+    min-height: 100%;
+    margin-bottom: -$footer-height;
+}
+
+.push,
+.wrapper-footer {
+    margin-top: $footer-margin-top;   
+    height: ($footer-height - $footer-margin-top);
+}
+
+.wrapper-footer {
+    background-color: $brandSecondary;
+    padding: 20px 0;
+    text-align: center;
+}
