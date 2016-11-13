@@ -13,7 +13,9 @@ html {
 
 body {
     background: $lightGray;
-    font: 18px/1.5 $systemFonts;
+    font-family: $systemFonts;
+    font-size: 18px;
+    line-height: 1.5;
     color: $gray;
 }
 
